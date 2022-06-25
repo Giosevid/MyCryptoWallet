@@ -1,3 +1,4 @@
+import TabIcon from '../../Components/TabIcon';
 import CryptoDetails from '../../Screens/CriptoDetails';
 import Home from '../../Screens/Home/index';
 import Market from '../../Screens/Market/index';
