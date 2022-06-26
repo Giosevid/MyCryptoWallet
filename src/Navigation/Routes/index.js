@@ -1,4 +1,3 @@
-import TabIcon from '../../Components/TabIcon';
 import CryptoDetails from '../../Screens/CriptoDetails';
 import Home from '../../Screens/Home/index';
 import Market from '../../Screens/Market/index';
@@ -10,7 +9,7 @@ import BottomTabs from '../BottomTabStackNavigator';
 
 const Routes = {
   MAIN: 'Main',
-  HOME: 'home',
+  HOME: 'Home',
   MARKET: 'Market',
   PORTFOLIO: 'Portfolio',
   PROFILE: 'Profile',
@@ -21,10 +20,10 @@ const Routes = {
 
 export const bottomTabsRoutes = [
   {name: Routes.HOME, screen: Home},
-  {name: Routes.MARKET, screen: Market},
   {name: Routes.PORTFOLIO, screen: Portfolio},
-  {name: Routes.PROFILE, screen: Profile},
   {name: Routes.TRADE, screen: Trade},
+  {name: Routes.MARKET, screen: Market},
+  {name: Routes.PROFILE, screen: Profile},
 ];
 
 export const stackTabsRoutes = [

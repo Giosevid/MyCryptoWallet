@@ -8,12 +8,8 @@ const Stack = createNativeStackNavigator();
 export default function StackNavigator() {
   return (
     <Stack.Navigator screenOptions={noHeader} initialRouteName={Routes.MAIN}>
-      {stackTabsRoutes.map(component => (
-        <Stack.Screen
-          key={component.name}
-          name={component.name}
-          component={component.screen}
-        />
+      {stackTabsRoutes.map(({name, screen}) => (
+        <Stack.Screen key={name} name={name} component={screen} />
       ))}
     </Stack.Navigator>
   );
