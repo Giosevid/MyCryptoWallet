@@ -32,10 +32,14 @@ const styles = isFocused =>
       tintColor: isFocused ? COLORS.white : COLORS.secondary,
     },
     tradeStyle: {
-      width: 65,
-      height: 65,
+      width: 60,
+      height: 60,
       borderRadius: 30,
       backgroundColor: COLORS.black,
+    },
+    closeIcon: {
+      width: 10,
+      height: 10,
     },
   });
 
