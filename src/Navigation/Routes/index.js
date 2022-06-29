@@ -7,7 +7,7 @@ import Trade from '../../Screens/Trade/index';
 import Transaction from '../../Screens/Transaction';
 import BottomTabs from '../BottomTabStackNavigator';
 
-const Routes = {
+export const Routes = {
   MAIN: 'Main',
   HOME: 'Home',
   MARKET: 'Market',
@@ -31,5 +31,3 @@ export const stackTabsRoutes = [
   {name: Routes.CRYPTO_DETAILS, screen: CryptoDetails},
   {name: Routes.TRANSACTION, screen: Transaction},
 ];
-
-export default Routes;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Routes, {stackTabsRoutes} from '../Routes';
+import {Routes, stackTabsRoutes} from '../Routes';
 import {noHeader} from '../options';
 
 const Stack = createNativeStackNavigator();

@@ -4,7 +4,7 @@ import {propertyButton} from './constants';
 import styles from './styles';
 import Button from '../Button/index';
 import MIXINS from '../../assets/theme/mixins';
-import {useSelector, useDispatch} from 'react-redux';
+import {useSelector} from 'react-redux';
 
 export default function MainLayout({children}) {
   const {isTrade} = useSelector(state => state.trade);
@@ -26,7 +26,6 @@ export default function MainLayout({children}) {
   return (
     <View style={styles().container}>
       {children}
-      <Text>hola</Text>
       <Animated.View style={styles(valueTop).animatedView}>
         {propertyButton.map((property, index) => (
           <Button
