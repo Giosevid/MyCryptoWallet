@@ -22,6 +22,8 @@ Esta es una billetera virtual hecha en react native, donde vas a poder ver las c
 
 ## Installation
 
+#### El apk se encuentra en el root de proyecro se llma app-release.apk se puede descargar de allí e instalar
+
 Install my-project with npm
 
 ```bash
