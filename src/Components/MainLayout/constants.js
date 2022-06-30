@@ -1,14 +1,18 @@
 import ICONS from '../../assets/theme/icons';
+import {Routes} from '../../Navigation/Routes/index';
 
 export const propertyButton = [
   {
     label: 'Transferir',
     icon: ICONS.send,
-    onPress: () => console.log('Transferir'),
+    onPress: navigation =>
+      navigation.navigate({
+        name: Routes.TRANSACTION,
+      }),
   },
   {
     label: 'Retirar',
     icon: ICONS.withdraw,
-    onPress: () => console.log('Retirar'),
+    onPress: navigation => navigation.navigate(Routes.CRYPTO_DETAILS),
   },
 ];

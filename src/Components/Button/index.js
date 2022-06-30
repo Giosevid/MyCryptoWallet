@@ -4,7 +4,9 @@ import styles from './styles';
 
 export default function Button({icon, label, onPress, buttonStyles}) {
   return (
-    <TouchableOpacity style={[styles.container, {...buttonStyles}]}>
+    <TouchableOpacity
+      style={[styles.container, {...buttonStyles}]}
+      onPress={onPress}>
       <Image source={icon} resizeMode="contain" style={styles.icon} />
       <Text style={[styles.text]}>{label}</Text>
     </TouchableOpacity>

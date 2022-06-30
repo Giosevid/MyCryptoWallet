@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: MIXINS.radius,
     backgroundColor: COLORS.white,
+    width: '90%',
   },
   icon: {
     width: 20,

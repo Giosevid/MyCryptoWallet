@@ -6,6 +6,8 @@ import Profile from '../../Screens/Profile/index';
 import Trade from '../../Screens/Trade/index';
 import Transaction from '../../Screens/Transaction';
 import BottomTabs from '../BottomTabStackNavigator';
+import Transfer from '../../Screens/Transfer/index';
+import Success from '../../Screens/Success';
 
 export const Routes = {
   MAIN: 'Main',
@@ -16,6 +18,8 @@ export const Routes = {
   TRADE: 'Trade',
   CRYPTO_DETAILS: 'CryptoDetails',
   TRANSACTION: 'Transaction',
+  TRANSFER: 'TRANSFER',
+  SUCCESS: 'SUCCESS',
 };
 
 export const bottomTabsRoutes = [
@@ -30,4 +34,6 @@ export const stackTabsRoutes = [
   {name: Routes.MAIN, screen: BottomTabs},
   {name: Routes.CRYPTO_DETAILS, screen: CryptoDetails},
   {name: Routes.TRANSACTION, screen: Transaction},
+  {name: Routes.TRANSFER, screen: Transfer},
+  {name: Routes.SUCCESS, screen: Success},
 ];

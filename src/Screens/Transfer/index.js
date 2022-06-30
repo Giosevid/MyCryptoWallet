@@ -5,38 +5,44 @@ import styles from './styles';
 import COLORS from '../../assets/theme/colors';
 import Button from '../../Components/Button/index';
 import {useDispatch} from 'react-redux';
-import {setTransferId} from '../../redux/reducers/transactionReducer';
+import {
+  setAmount,
+  setTransferId,
+} from '../../redux/reducers/transactionReducer';
 import {useNavigation} from '@react-navigation/native';
 import {Routes} from '../../Navigation/Routes/index';
 
-const Transaction = () => {
+const valueRandom = Math.random();
+
+const Transfer = () => {
   const navigation = useNavigation();
-  const [idUser, setIdUser] = useState(null);
+  const [amount, setTransfer] = useState(0);
   const dispatch = useDispatch();
 
   const onPress = () => {
-    dispatch(setTransferId({direction: idUser}));
-    navigation.navigate(Routes.TRANSFER);
+    dispatch(setAmount({withdraw: amount}));
+    navigation.navigate(Routes.SUCCESS);
   };
 
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.title}>Transferir</Text>
+        <Text style={styles.title}>Enviar</Text>
         <TextInput
           mode="Outlined"
-          label="Email ó Número de teléfono"
+          label="cantidad"
+          keyboardType="numeric"
           placeholder="introducir"
           outlineColor={COLORS.lightGray}
           activeOutlineColor={COLORS.white}
-          value={idUser}
-          onChangeText={text => setIdUser(text)}
+          value={amount}
+          onChangeText={text => setTransfer(text)}
         />
-        <Text style={styles.text}>Transfiere a tus amigos!</Text>
+        <Text style={styles.text}>{valueRandom}</Text>
       </View>
       <Button label="Aceptar" onPress={onPress} />
     </View>
   );
 };
 
-export default memo(Transaction);
+export default memo(Transfer);
