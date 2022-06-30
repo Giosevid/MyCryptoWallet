@@ -7,8 +7,6 @@ import styles from './styles';
 export default function Portfolio() {
   const {arrTransactions} = useSelector(state => state).transaction;
 
-  console.log('arr ====> ', arrTransactions);
-
   const renderItem = ({item}) => (
     <Card style={styles.card}>
       <Card.Title title={item.direction} subtitle={item.withdraw} />

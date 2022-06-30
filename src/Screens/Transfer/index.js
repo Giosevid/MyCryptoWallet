@@ -5,10 +5,7 @@ import styles from './styles';
 import COLORS from '../../assets/theme/colors';
 import Button from '../../Components/Button/index';
 import {useDispatch} from 'react-redux';
-import {
-  setAmount,
-  setTransferId,
-} from '../../redux/reducers/transactionReducer';
+import {setAmount} from '../../redux/reducers/transactionReducer';
 import {useNavigation} from '@react-navigation/native';
 import {Routes} from '../../Navigation/Routes/index';
 
